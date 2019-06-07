@@ -10,7 +10,7 @@ namespace Integrate2019Demo
     public static class SBQueueTrigger
     {
         [FunctionName("SBQueueTrigger")]
-        public static void Run([ServiceBusTrigger("integrate2019", Connection = "wsilveirnzsbconn")]Message msg, ILogger log)
+        public static void Run([ServiceBusTrigger("integrate2019", Connection = "servicebusconn")]Message msg, ILogger log)
         {
             object filename;
             msg.UserProperties.TryGetValue("FileName", out filename);
