@@ -4,6 +4,7 @@ Claim Check Pattern and Application Insight utility code used during Integrate 2
 
 you will need the following details in you local.setting.json
 
+```json
 {
   "IsEncrypted": false,
   "Values": {
@@ -20,3 +21,4 @@ you will need the following details in you local.setting.json
     "serviceBusSASKey": "<service bus Access Key Value>"
   }
 }
+```
